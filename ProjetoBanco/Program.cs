@@ -16,8 +16,8 @@ namespace ProjetoBanco
             conta1.agencia = 50;
             conta1.conta = "123";
             conta1.nome = "manu";
-            conta1.saldo = 100.00;
-
+            conta1.saldo = 400;
+            
 
             conta2.agencia = 20;
             conta2.conta = "122";
@@ -34,11 +34,26 @@ namespace ProjetoBanco
            // conta1.Depositar(200);
            // Console.WriteLine("o saldo depois do deposito é " + conta1.saldo);
 
-            Console.WriteLine("o saldo anterior é "+ conta2.saldo);
-            conta2.sacar(100);
-            Console.WriteLine("o saldo atual é " + conta2.saldo) ;
+           // Console.WriteLine("o saldo anterior é "+ conta2.saldo);
+          // if(conta2.sacar(100))
+            
+            //Console.WriteLine("o saldo atual é " + conta2.saldo) ;
 
             
+                Console.WriteLine("o saldo atual da conta que ira transferir " + conta1.saldo );
+            Console.WriteLine("o saldo da conta que ira receber " + conta2.saldo);
+
+            if (conta1.Transferir(100, conta2))
+
+                Console.WriteLine("o valor da sua transderencia é " + conta1.valort);
+
+            Console.WriteLine(" o saldo atual após voce transferir é " + conta1.saldo);
+            Console.WriteLine("saldo atual após receber " + conta2.saldo);
+
+
+            { 
+            }
+
 
 
             
